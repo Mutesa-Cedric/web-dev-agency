@@ -4,7 +4,7 @@ import Footer from "../Footer";
 
 export default function MainLayout() {
     return (
-        <div className="w-full min-h-screen flex flex-col justify-between">
+        <div className="w-full bg-[#110F0F]">
             <Navbar />
             <Outlet />
             <Footer />
