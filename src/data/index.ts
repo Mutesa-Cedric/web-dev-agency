@@ -1,4 +1,4 @@
-import { IProject, IService } from "../types";
+import { IProject, IService, ITestimonial } from "../types";
 
 export const whatWeOffer: IService[] = [
     {
@@ -58,5 +58,39 @@ export const projects: IProject[] = [
     {
         title: "How We Optimized Our SEO",
         tag: "SEO"
+    }
+]
+
+export const testimonials: ITestimonial[] = [
+    {
+        content: "Sit ut diam bibendum dolor. Ullamcorper pharetra nibh eget vitae pulvinar. Placerat sapien, dolor, aenean vivamus in tincidunt et. Mauris dolor vestibulum et lacus a ante orci.",
+        postedBy: {
+            name: "Brooklyn Simmons",
+            profile: "1.png",
+            worksAt: "manam",
+        }
+    },
+    {
+        content: "Vitae tellus bibendum nibh integer auctor pretium sed. Sollicitudin tristique euismod elit.",
+        postedBy: {
+            name: "Esther Howard",
+            profile: "2.png",
+            worksAt: "Offmax"
+        }
+    },
+    {
+        content: "Eu eu eget lorem commodo sagittis enim in viverra. Urna egestas ipsum gravida tempor. Libero, consectetur urna in enim magnis. Est.",
+        postedBy: {
+            name: "Arlene McCoy",
+            profile: "3.png",
+            worksAt: "bloopixel"
+        }
+    }, {
+        content: "Amet aliquam, volutpat nisl, duis sed at. Vehicula proin consectetur risus dictumst nec amet consequat at tempus. Ornare dapibus nunc fames nibh morbi viverra eu sed mattis. ",
+        postedBy: {
+            name: "Jane Cooper",
+            worksAt: "unpixel",
+            profile: "1.png"
+        }
     }
 ]

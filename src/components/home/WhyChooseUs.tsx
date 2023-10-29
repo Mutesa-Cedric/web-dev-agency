@@ -1,7 +1,7 @@
 
 export default function WhyChooseUs() {
     return (
-        <div className="bg-black px-4 sm:px-8 md:px-12 lg:px-16 flex items-center justify-between flex-col md:flex-row gap-6 py-24 ">
+        <div className="bg-black px-4 sm:px-8 md:px-12 lg:px-16 flex items-center justify-between flex-col lg:flex-row gap-6 py-24 ">
             <img src="/searching.svg" />
             <div className="space-y-6 flex md:block items-center flex-col ">
                 <h3 className="text-white text-3xl font-bold">Why Choose Us</h3>

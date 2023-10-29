@@ -6,7 +6,7 @@ export default function ContactUs() {
     }
     return (
         <div className="w-full pt-16 pb-10 px-4 sm:px-8 md:px-12 lg:px-16  bg-[#110F0F] flex flex-col gap-y-6 items-end">
-            <div className="w-full bg-[#FFB219] flex flex-col items-center gap-y-5 py-12 text-black rounded border border-primary-gray">
+            <div className="w-full bg-[#FFB219] flex flex-col items-center gap-y-5 py-12 px-4 text-black rounded border border-primary-gray">
                 <h3 className="text-3xl font-bold">Let&apos;s discuss the idea</h3>
                 <p className="text-center text-xl text-black/60 max-w-2xl">Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. </p>
                 <div className="max-w-2xl w-full flex items-center gap-x-4">

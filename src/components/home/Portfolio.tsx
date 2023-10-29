@@ -32,7 +32,7 @@ const Project = ({ title, tag }: IProject) => {
             <div className="w-full h-40 rounded bg-[#8474C4]" />
             <p className="bg-primary-yellow text-black text-sm px-2 py-1 w-fit uppercase rounded">{tag}</p>
             <h3 className="text-xl text-white font-bold">{title}</h3>
-            <div className="flex items-center space-x-2 text-white/60 hover:text-white">
+            <div role="button" className="flex items-center space-x-2 text-white/60 hover:text-white">
                 <span>Read More</span>
                 <BsArrowRight />
             </div>
