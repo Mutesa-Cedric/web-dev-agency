@@ -1,5 +1,9 @@
 
 export default function ContactUs() {
+
+    const goToTop = () => {
+        window.scrollTo(0, 0);
+    }
     return (
         <div className="w-full pt-16 pb-10 px-4 sm:px-8 md:px-12 lg:px-16  bg-[#110F0F] flex flex-col gap-y-6 items-end">
             <div className="w-full bg-[#FFB219] flex flex-col items-center gap-y-5 py-12 text-black rounded border border-primary-gray">
@@ -10,7 +14,9 @@ export default function ContactUs() {
                     <button className="bg-black text-white py-3 px-6 rounded-full uppercase">send</button>
                 </div>
             </div>
-            <button className="border border-primary-yellow text-primary-yellow uppercase py-3 px-6 rounded-full transition-colors duration-300 hover:bg-primary-yellow hover:text-white">
+            <button
+                onClick={goToTop}
+                className="border border-primary-yellow text-primary-yellow uppercase py-3 px-6 rounded-full transition-colors duration-300 hover:bg-primary-yellow hover:text-white">
                 go to top
             </button>
         </div>
