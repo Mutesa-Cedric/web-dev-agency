@@ -1,11 +1,28 @@
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import MainLayout from "./components/layouts/MainLayout";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Services from "./pages/Services";
 
 function App() {
 
   return (
     <>
-      <div className='w-full min-h-screen flex items-center justify-center'>
-        <p className='text-orange-600 text-2xl font-medium'>Web Dev Agency</p>
-      </div>
+      <Router>
+        <Routes>
+          <Route element={<MainLayout />} path="/">
+            <Route element={<Home />} path="/" />
+            <Route element={<About />} path="/about" />
+            <Route element={<Services />} path="/services" />
+            <Route element={<NotFound />} path="*" />
+          </Route>
+        </Routes>
+      </Router >
     </>
   )
 }
