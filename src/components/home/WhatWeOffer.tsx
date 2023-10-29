@@ -1,5 +1,5 @@
 import { whatWeOffer } from "../../data"
-import { IService } from "../../types"
+import Service from "../Service"
 
 export default function WhatWeOffer() {
     return (
@@ -11,20 +11,10 @@ export default function WhatWeOffer() {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 {
                     whatWeOffer.map(service => (
-                        <Offer key={service.title} {...service} />
+                        <Service key={service.title} {...service} />
                     ))
                 }
             </div>
-        </div>
-    )
-}
-
-const Offer = ({ title, description, icon }: IService) => {
-    return (
-        <div className="space-y-4 p-4 rounded border border-primary-gray w-full">
-            <img src={`/services/${icon}`} />
-            <h3 className="text-white font-bold text-2xl ">{title}</h3>
-            <p className="text-white/60 text-sm">{description}</p>
         </div>
     )
 }
