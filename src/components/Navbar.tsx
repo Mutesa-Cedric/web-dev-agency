@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const links: {
     name: string,
@@ -9,6 +9,8 @@ const links: {
     ]
 
 export default function Navbar() {
+    const location = useLocation();
+
     return (
         <div className="w-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-16 py-6 absolute top-0 left-0 z-20 h-[10vh] text-white "
             style={{
@@ -23,7 +25,9 @@ export default function Navbar() {
             <div className="flex items-center gap-x-8">
                 {
                     links.map(link => (
-                        <Link to={link.href} key={link.name}>
+                        <Link to={link.href} key={link.name}
+                            className={`${location.pathname === link.href ? "text-primary-yellow" : "text-white hover:text-primary-yellow"} transition-colors duration-200`}
+                        >
                             {link.name}
                         </Link>
                     ))

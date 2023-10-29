@@ -4,3 +4,8 @@ export interface IService {
     icon: string,
     description: string
 }
+
+export interface IProject {
+    title: string,
+    tag: string
+}

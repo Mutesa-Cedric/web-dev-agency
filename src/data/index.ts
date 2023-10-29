@@ -1,4 +1,4 @@
-import { IService } from "../types";
+import { IProject, IService } from "../types";
 
 export const whatWeOffer: IService[] = [
     {
@@ -30,5 +30,33 @@ export const whatWeOffer: IService[] = [
         title: "E-COMMERCE",
         description: "We provide e-commerce solutions to help you sell products effectively.",
         icon: "ecommerce.svg"
+    }
+]
+
+
+export const projects: IProject[] = [
+    {
+        title: "creative landing page",
+        tag: "website"
+    },
+    {
+        title: "why we collect user data",
+        tag: "digital marketing"
+    },
+    {
+        title: "creative branding",
+        tag: "branding"
+    },
+    {
+        title: "creative landing page",
+        tag: "user testing"
+    },
+    {
+        title: "Automation. Advanced level",
+        tag: "automation"
+    },
+    {
+        title: "How We Optimized Our SEO",
+        tag: "SEO"
     }
 ]
